@@ -1,82 +1,30 @@
-<div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/AarhamH/react-site/main/src/assets/logo-white.png" width="80" />
-</div>
-<h1 align="center">
-  Welcome to my website's repo!
-</h1>
-<p align="center">
-  The first version of my <a href="https://aarhamh.github.io/react-site" target="_blank">website</a>. This site is built with <a href="https://reactjs.org" target="_blank">React</a> and hosted with <a href="https://pages.github.com/" target="_blank">Github Pages</a>
-</p>
-<p align="center">
-  
-<div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/AarhamH/react-site/main/src/assets/ezgif.com-gif-maker.gif" width="00" />
-</div>
-
-  
-## 🍴 Forking this repo
-
-I welcome anyone to fork and edit this repo as they please!
-
-## 🛠 Installation & Set Up
-
-After installing this repo to your computer:
-
-1. Install node_module packages
-
-   ```sh
-   npm i 
-   ```
-
-2. Execute dev server
-
-   ```sh
-   npm start
-   ```
-   
-   
-   
-## 📄 Github Pages Setup
- 
- 1. Install gh-pages react package w/ dev dependencies
-
-   ```sh
-   npm i -g gh-pages --save-dev
-   ```
-   
-  1. Update your package.json's homepage tag
-```json
-
-{
-  "homepage": "http://YOURGITHUBNAME.github.io/YOURREPONAME",
-  "name": "YOURREPONAME",
+# Astro Starter Kit: Portfolio
 
 ```
+npm create astro@latest -- --template portfolio
+```
 
- 
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/portfolio)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/portfolio)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/portfolio/devcontainer.json)
 
-## 🚀 Deployment
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-  1. Commit any changes 
+![portfolio](https://user-images.githubusercontent.com/357379/210779178-a98f0fb7-6b1a-4068-894c-8e1403e26654.jpg)
 
-   ```sh
-   git commit -m "Message"
-   ```
-   
-  2. Deploy (which will deploy to github pages)
+## 🧞 Commands
 
-   ```sh
-   npm run deploy
-   ```
+All commands are run from the root of the project, from a terminal:
 
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:3000`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 🎨 Color Reference
+## 👀 Want to learn more?
 
-| Color         |   Where it's used      | Hex                                                                      |
-| --------------|------------------------| -------------------------------------------------------------------------|
-| Dark Navy     | Background (primary)   | ![#010409](https://via.placeholder.com/10/010409?text=+) `#010409`       |
-| Grey Navy     | Background (secondary) | ![#161b22](https://via.placeholder.com/10/161b22?text=+) `#161b22`       |
-| Violet        | Primary Color          | ![#674ea7](https://via.placeholder.com/10/674ea7?text=+) `#674ea7`       |
-| Pale Violet   | Secondary Color        | ![#8e7cc3](https://via.placeholder.com/10/8e7cc3?text=+) `#8e7cc3`       |
-| White         | Paragraph Text         | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) `#ffffff`       |
-| Light Grey    | General text           | ![#ffffff99](https://via.placeholder.com/10/ffffff99?text=+) `#ffffff99` |
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
