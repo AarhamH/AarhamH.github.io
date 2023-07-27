@@ -19,7 +19,7 @@ const posts = await getCollection("posts");
     <article class="flex flex-col gap-8">
       <h1 class="text-3xl text-neutral-100">{presentation.title}</h1>
       <h2
-        class="max-w-[80ch] leading-6"
+        class="max-w-[90ch] leading-6"
         set:html={convertAsteriskToStrongTag(presentation.description)}
       />
       <SocialLinks />
@@ -51,8 +51,8 @@ const posts = await getCollection("posts");
 
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">
-          Selected projects ({projects.length})
+        <h3 class="text-lg text-emerald-400">
+          Selected projects
         </h3>
       </header>
       {projects.length === 0 && <p>Oops, I must work^^^^^</p>}
