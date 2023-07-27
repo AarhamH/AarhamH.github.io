@@ -19,7 +19,7 @@ const posts = await getCollection("posts");
     <article class="flex flex-col gap-8">
       <h1 class="text-3xl text-neutral-100">{presentation.title}</h1>
       <h2
-        class="max-w-[60ch] leading-6"
+        class="max-w-[80ch] leading-6"
         set:html={convertAsteriskToStrongTag(presentation.description)}
       />
       <SocialLinks />
