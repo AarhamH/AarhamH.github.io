@@ -10,6 +10,10 @@ import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 
 import presentation from "@/data/presentation";
 import projects from "@/data/projects";
+import {languages} from'@/data/technologies';
+import {technologies} from'@/data/technologies';
+
+import TechnologyCard from "@/components/TechnologyCard.astro";
 
 const posts = await getCollection("posts");
 ---
@@ -32,19 +36,16 @@ const posts = await getCollection("posts");
       </header>
       {posts.length === 0 && <p>Soon, stay connected 👀...</p>}
 
-      <section class="flex flex-col gap-4 md:flex-row md:flex-wrap">
+      <section class="grid grid-cols-8 gap-4">
         {
-          posts.length !== 0 &&
-            posts
-              .slice(0, 2)
-              .map((post) => (
-                <PostCard
-                  publishedAt={post.data.publishedAt}
-                  title={post.data.title}
-                  description={post.data.description}
-                  slug={post.slug}
-                />
-              ))
+          languages.length !== 0 &&
+            languages.map((language) => <TechnologyCard {...language} />)
+        }
+      </section>
+      <section class="grid grid-cols-8 gap-4">
+        {
+          technologies.length !== 0 &&
+          technologies.map((technology) => <TechnologyCard {...technology} />)
         }
       </section>
     </article>

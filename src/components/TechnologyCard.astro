@@ -1,0 +1,22 @@
+---
+import type { Technology } from "@/data/technologies";
+import python from '@/content/technologies/python.svg'
+type Props = Technology;
+
+const { language} = Astro.props;
+
+const formatTechs = (values: string[]) =>
+  values.toString().replaceAll(",", " • ");
+---
+
+<>
+      <a
+        class="group flex w-full cursor-pointer relative rounded-md border border-neutral-700 p-1 transition-all duration-300 hover:-translate-y-2 hover:border-emerald-200"
+        href=""
+        target="_blank"
+        rel="noreferrer"
+      >
+          <img src={language} class="opacity-100 transition-opacity duration-300 group-hover:opacity-50" alt="Image" style="width:object-fit;height:object-fit"/>
+      </a>
+      
+</>
