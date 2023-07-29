@@ -29,30 +29,41 @@ const posts = await getCollection("posts");
       <SocialLinks />
     </article>
 
-    <article class="flex flex-col gap-8">
-      <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">Latest posts</h3>
-        <Link href="/posts" label="See all posts" isUnderline target="_self" />
+    <article class="flex flex-col">
+      <header class="flex w-full flex-row justify-between gap-3 ">
+        <h3 class="text-lg text-white">Competencies</h3>
       </header>
       {posts.length === 0 && <p>Soon, stay connected 👀...</p>}
 
-      <section class="grid grid-cols-8 gap-4">
-        {
-          languages.length !== 0 &&
-            languages.map((language) => <TechnologyCard {...language} />)
-        }
-      </section>
-      <section class="grid grid-cols-8 gap-4">
-        {
-          technologies.length !== 0 &&
-          technologies.map((technology) => <TechnologyCard {...technology} />)
-        }
-      </section>
+      <h3 class="bottom-0 left-0 w-full flex justify-center items-center p-3">
+        Languages
+      </h3>
+      <div class="flex justify-center pb-10">
+
+        <section class="grid grid-cols-7 gap-9">
+          {
+            languages.length !== 0 &&
+              languages.map((language) => <TechnologyCard {...language} />)
+          }
+        </section>
+      </div>
+
+      <h3 class="bottom-0 left-0 w-full flex justify-center items-center p-3">
+        Technologies
+      </h3>
+      <div class="flex justify-center">
+        <section class="grid grid-cols-7 gap-9">
+          {
+            technologies.length !== 0 &&
+            technologies.map((technology) => <TechnologyCard {...technology} />)
+          }
+        </section>
+      </div>
     </article>
 
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-emerald-400">
+        <h3 class="text-lg text-white">
           Selected projects
         </h3>
       </header>

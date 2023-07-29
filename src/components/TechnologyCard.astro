@@ -3,7 +3,7 @@ import type { Technology } from "@/data/technologies";
 import python from '@/content/technologies/python.svg'
 type Props = Technology;
 
-const { language} = Astro.props;
+const {name, language, link} = Astro.props;
 
 const formatTechs = (values: string[]) =>
   values.toString().replaceAll(",", " • ");
@@ -11,12 +11,17 @@ const formatTechs = (values: string[]) =>
 
 <>
       <a
-        class="group flex w-full cursor-pointer relative rounded-md border border-neutral-700 p-1 transition-all duration-300 hover:-translate-y-2 hover:border-emerald-200"
-        href=""
+        class="group flex w-full cursor-pointer relative rounded-md border border-neutral-700 p-2 transition-all duration-300 hover:-translate-y-2 hover:border-emerald-200"
+        href={link}
         target="_blank"
         rel="noreferrer"
       >
-          <img src={language} class="opacity-100 transition-opacity duration-300 group-hover:opacity-50" alt="Image" style="width:object-fit;height:object-fit"/>
+          <div class="relative pb-4  flex justify-center items-center">
+            <img src={language} class="opacity-100 pb-3 p-3" alt="Image" style="width:60px;height:60px" />
+            <p class="absolute bottom-0 left-0 w-full flex justify-center items-center px-2 py-1">
+              {name}
+            </p>
+          </div>
       </a>
       
 </>
