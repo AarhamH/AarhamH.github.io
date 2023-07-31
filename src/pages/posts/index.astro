@@ -4,6 +4,7 @@ import Layout from "@/layouts/Layout.astro";
 import formatUrl from "@/utils/formatUrl";
 import type { Project } from "@/data/projects";
 import projects from "@/data/projects";
+import { Icon } from "astro-icon"
 
 type Props = Project;
 const { title, techs, link, image, important } = Astro.props;
@@ -21,7 +22,6 @@ const { title, techs, link, image, important } = Astro.props;
           >
             <div class="flex w-full items-center justify-between">
               <h2 class="text-lg transition-color duration-300 group-hover:text-emerald-400">{project.title}</h2>
-
               <div class="flex flex-row items-center gap-4">
                 <p>{project.year}</p>
                 <svg

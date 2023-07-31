@@ -1,18 +1,18 @@
-import python from '../content/technologies/python.svg'
-import csharp from '../content/technologies/csharp.svg'
-import cpp from '../content/technologies/cpp.svg'
-import clang from '../content/technologies/clang.png'
-import html from '../content/technologies/html.svg'
-import css from '../content/technologies/css.svg'
-import javascript from '../content/technologies/javascript.svg'
+import python from '../content/technologies/_python.svg'
+import csharp from '../content/technologies/_csharp.svg'
+import cpp from '../content/technologies/_cpp.svg'
+import clang from '../content/technologies/_c.svg'
+import html from '../content/technologies/_html.svg'
+import css from '../content/technologies/_css.svg'
+import javascript from '../content/technologies/_javascript.svg'
 
-import dotnet from '../content/technologies/dotnet.svg'
-import react from '../content/technologies/react.svg'
-import git from '../content/technologies/git.svg'
-import visualstudio from '../content/technologies/visual-studio.svg'
-import azure from '../content/technologies/azure.svg'
-import linux from '../content/technologies/linux.png'
-import node from '../content/technologies/nodejs.svg'
+import dotnet from '../content/technologies/_dotnet.svg'
+import react from '../content/technologies/_react.svg'
+import git from '../content/technologies/_git.svg'
+import sqlite from '../content/technologies/_sqlite.svg'
+import azure from '../content/technologies/_azure.svg'
+import linux from '../content/technologies/_linux.svg'
+import node from '../content/technologies/_nodejs.svg'
 
 
 export type Technology = {
@@ -73,8 +73,8 @@ export const technologies : Technology[] =
         link: "https://azure.microsoft.com/en-ca"
 
     },
-    {   name: 'VS IDE',
-         language: visualstudio,
+    {   name: 'SQLite',
+         language: sqlite,
          link: "https://visualstudio.microsoft.com/"
 
     },
