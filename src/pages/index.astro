@@ -3,7 +3,6 @@ import { getCollection } from "astro:content";
 
 import Layout from "@/layouts/Layout.astro";
 import SocialLinks from "@/components/SocialLinks.astro";
-import PostCard from "@/components/PostCard.astro";
 import ProjectCard from "@/components/ProjectCard.astro";
 import Link from "@/components/shared/Link.astro";
 import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
@@ -15,7 +14,6 @@ import {technologies} from'@/data/technologies';
 
 import TechnologyCard from "@/components/TechnologyCard.astro";
 
-const posts = await getCollection("posts");
 ---
 
 <Layout>
@@ -23,7 +21,7 @@ const posts = await getCollection("posts");
     <article class="flex flex-col gap-8">
       <h1 class="text-3xl text-neutral-100">{presentation.title}</h1>
       <h2
-        class="max-w-[90ch] leading-6"
+        class="max-w-[100ch] leading-6"
         set:html={convertAsteriskToStrongTag(presentation.description)}
       />
       <SocialLinks />
@@ -33,14 +31,13 @@ const posts = await getCollection("posts");
       <header class="flex w-full flex-row justify-between gap-3 ">
         <h3 class="text-lg text-white">Competencies</h3>
       </header>
-      {posts.length === 0 && <p>Soon, stay connected 👀...</p>}
 
       <h3 class="bottom-0 left-0 w-full flex justify-center items-center p-3">
         Languages
       </h3>
       <div class="flex justify-center pb-10">
 
-        <section class="grid grid-cols-7 gap-9">
+        <section class="grid grid-cols-7 gap-5">
           {
             languages.length !== 0 &&
               languages.map((language) => <TechnologyCard {...language} />)
@@ -52,7 +49,7 @@ const posts = await getCollection("posts");
         Technologies
       </h3>
       <div class="flex justify-center">
-        <section class="grid grid-cols-7 gap-9">
+        <section class="grid grid-cols-7 gap-5">
           {
             technologies.length !== 0 &&
             technologies.map((technology) => <TechnologyCard {...technology} />)

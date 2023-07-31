@@ -3,7 +3,7 @@ import type { Project } from "@/data/projects";
 
 type Props = Project;
 
-const { title, techs, link, image, isComingSoon } = Astro.props;
+const { title, techs, link, image, important } = Astro.props;
 
 const formatTechs = (values: string[]) =>
   values.toString().replaceAll(",", " • ");
@@ -11,23 +11,7 @@ const formatTechs = (values: string[]) =>
 
 <>
   {
-    isComingSoon && (
-    <div class="grid grid-cols-2 gap-2">
-      <div class="group flex w-full cursor-pointer relative rounded-md border border-neutral-700 p-1 transition-all duration-300 hover:-translate-y-2 hover:border-emerald-200">
-        <div class="flex flex-col gap-4 md:flex-row md:items-center">
-          <img src={image} alt="Image" style="width:100px;height:60px"/>
-          <p class="text-emerald-400 text-2xl font-bold">{title}</p>
-          <p>{formatTechs(techs)}</p>
-        </div>
-
-        <p class="w-fit rounded-md bg-neutral-900 px-4 py-1">Soon</p>
-      </div>
-    </div>
-    )
-  }
-
-  {
-    !isComingSoon && (
+    important && (
       <a
         class="group flex w-full cursor-pointer relative rounded-md border border-neutral-700 p-1 transition-all duration-300 hover:-translate-y-2 hover:border-emerald-200"
         href={link}
