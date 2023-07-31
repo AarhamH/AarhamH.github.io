@@ -1,5 +1,9 @@
 import projImg1 from '../content/images/music-player.png'
 import projImg2 from '../content/images/nba-quicksearch.png'
+import projImg3 from '../content/images/portfolio.png'
+import projImg4 from '../content/images/test.png'
+
+
 
 export type Project = {
   title: string;
@@ -33,7 +37,7 @@ const projects: Project[] = [
     link: "https://github.com/AarhamH/python-image-manipulator",
     year: "2021",
     important: true,
-    image: projImg2
+    image: projImg4
   },
   {
     title: "Travelling Salesman Solver",
@@ -48,7 +52,7 @@ const projects: Project[] = [
     link: "https://github.com/AarhamH/react-site",
     year: "2023",
     important: true,
-    image: projImg2
+    image: projImg3
   },
 
 ];
