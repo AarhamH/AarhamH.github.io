@@ -1,6 +1,5 @@
 ---
 import type { Technology } from "@/data/technologies";
-import { Icon } from 'astro-icon'
 type Props = Technology;
 
 const {name, language, link} = Astro.props;
@@ -17,7 +16,6 @@ const formatTechs = (values: string[]) =>
         rel="noreferrer"
       >
           <div class="relative pb-4  flex justify-center items-center">
-            <Icon name={language}/>
             <img src={language} class="opacity-100 pb-3 p-3" alt="Image" style="width:60px;height:60px" />
             <p class="absolute bottom-0 left-0 w-full flex justify-center items-center px-2 py-1">
               {name}

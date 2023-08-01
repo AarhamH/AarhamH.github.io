@@ -75,7 +75,7 @@ export const technologies : Technology[] =
     },
     {   name: 'SQLite',
          language: sqlite,
-         link: "https://visualstudio.microsoft.com/"
+         link: "https://www.sqlite.org/index.html"
 
     },
     {   name: 'NodeJS',

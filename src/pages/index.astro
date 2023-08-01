@@ -6,8 +6,10 @@ import SocialLinks from "@/components/SocialLinks.astro";
 import ProjectCard from "@/components/ProjectCard.astro";
 import Link from "@/components/shared/Link.astro";
 import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
+import Resume from "../content/resume/Aarham-Haider-Resume.pdf"
 
 import presentation from "@/data/presentation";
+import education from "@/data/education";
 import projects from "@/data/projects";
 import {languages} from'@/data/technologies';
 import {technologies} from'@/data/technologies';
@@ -24,12 +26,32 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
         class="max-w-[100ch] leading-6"
         set:html={convertAsteriskToStrongTag(presentation.description)}
       />
-      <SocialLinks />
+      <a class="underline duration-300 transition-all hover:text-white gap-20 max-w-[20ch]" href={Resume} download>Download My Resume</a>
     </article>
 
     <article class="flex flex-col">
+      
+      <header class="flex w-full flex-row justify-between pb-4 ">
+        <h3 class="text-lg text-emerald-400">Education</h3>
+      </header>
+      <p class="pb-3 decoration-4 text-white">{presentation.education}</p>
+      <div class="pl-4">
+        {
+          education.map((educations)=>(
+            <div>
+              <p class="text-emerald-400">⮞ {educations.course}</p>
+              <p class="pl-4 pb-3">⮩  {educations.content}, </p>
+            </div>
+          ))
+        }
+      </div>
+
+    </article>
+
+    <article class="flex flex-col">
+      
       <header class="flex w-full flex-row justify-between gap-3 ">
-        <h3 class="text-lg text-white">Competencies</h3>
+        <h3 class="text-lg text-emerald-400">Competencies</h3>
       </header>
 
       <h3 class="bottom-0 left-0 w-full flex justify-center items-center p-3">
@@ -60,7 +82,7 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
 
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-white">
+        <h3 class="text-lg text-emerald-400">
           Selected projects
         </h3>
       </header>
@@ -76,7 +98,7 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
 
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-neutral-100">Get in touch</h3>
+        <h3 class="text-lg text-emerald-400">Get in touch</h3>
       </header>
       <p>
         Email me at <Link
