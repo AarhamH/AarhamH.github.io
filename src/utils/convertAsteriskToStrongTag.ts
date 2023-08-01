@@ -9,5 +9,4 @@ export default function convertAsteriskToStrongTag(str: string) {
     }">$1</strong>`
   );
 
-  // test
 }
