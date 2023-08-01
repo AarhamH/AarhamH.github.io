@@ -8,4 +8,6 @@ export default function convertAsteriskToStrongTag(str: string) {
       MAP_COLOR_VARIANT_TO_TEXT[theme.colors.primary]
     }">$1</strong>`
   );
+
+  // test
 }
