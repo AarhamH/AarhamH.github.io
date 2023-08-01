@@ -37,12 +37,12 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
           <hr class="h-px min-w-1 max-w-3 opacity-40 bg-emerald-200 border-0">        
         </div>
       </header>
-      <p class="pb-6 pt-3 decoration-4 text-white text-lg">{presentation.education}</p>
+      <p class="pb-6 pt-3 decoration-4 text-white text-md">~     {presentation.education}     ~</p>
       <div class="pl-4">
         {
           education.map((educations)=>(
             <div>
-              <p class="text-emerald-400 pb-1">⮞ {educations.course}</p>
+              <p class="text-emerald-400 pb-1 italic">⮞ {educations.course}</p>
               <p class="text-[12px] pl-4 pb-4">⮩  {educations.content}</p>
             </div>
           ))
