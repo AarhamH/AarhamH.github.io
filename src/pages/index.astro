@@ -39,8 +39,8 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
         {
           education.map((educations)=>(
             <div>
-              <p class="text-emerald-400">⮞ {educations.course}</p>
-              <p class="pl-4 pb-3">⮩  {educations.content}, </p>
+              <p class="text-emerald-400 pb-1">⮞ {educations.course}</p>
+              <p class="text-[12px] pl-4 pb-4">⮩  {educations.content}</p>
             </div>
           ))
         }
@@ -59,7 +59,7 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
       </h3>
       <div class="flex justify-center pb-10">
 
-        <section class="grid grid-cols-7 gap-5">
+        <section class="grid grid-cols-3 gap-5 sm:grid-cols-7">
           {
             languages.length !== 0 &&
               languages.map((language) => <TechnologyCard {...language} />)
@@ -71,7 +71,7 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
         Technologies
       </h3>
       <div class="flex justify-center">
-        <section class="grid grid-cols-7 gap-5">
+        <section class="grid grid-cols-3 gap-5 sm:grid-cols-7">
           {
             technologies.length !== 0 &&
             technologies.map((technology) => <TechnologyCard {...technology} />)
@@ -88,7 +88,7 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
       </header>
       {projects.length === 0 && <p>Oops, I must work^^^^^</p>}
 
-      <section class="grid grid-cols-2 gap-4">
+      <section class="grid grid-cols-1 gap-4 sm:grid-cols-2">
         {
           projects.length !== 0 &&
             projects.map((project) => <ProjectCard {...project} />)

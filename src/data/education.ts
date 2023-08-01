@@ -1,32 +1,28 @@
 export type Education = {
   course: string;
-  content: string[];
+  content: string;
 };
 
 const education: Education[] = [
   {
     course: "CMPT 225: Data Structures and Algorithms",
-    content: ["Stacks/Queues", "Trees", "Sorting","Hashing", "Priority Queue"],
+    content: "Implemented data structures, such as trees, heaps, and hashtables, and sorting algorithms in C++",
   },
   {
     course: "CMPT 276: Introduction to Software Engineering",
-    content: ["Android", "AGILE methods", "Git practices"],
+    content: "Practiced AGILE methods and Git techniques while building an Android application in Java",
   },
   {
     course: "CMPT 295: Intro to Computer Systems",
-    content: ["Memory", "RISC-V Assembly", "Cache","Processor Design", "Pipelining"],
+    content: "Learned about pointers and addressing, RISC-V assembly, and processor design   ",
   },
   {
     course: "CMPT 300: Operating Systems I",
-    content: ["Multi-Threaded Programming", "File Systems"],
-  },
-  {
-    course: "CMPT 300: Operating Systems I",
-    content: ["Multi-Threaded Programming", "File Systems"],
+    content: "Studied file systems, multi-threaded programming, processes, and memory in C",
   },
   {
     course: "CMPT 354: Database Systems I",
-    content: ["SQL I/O", "Administration", "Security"],
+    content: "Implemented database systems using SQL Server and learned about entities and schema design",
   },
 ];
 
