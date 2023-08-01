@@ -1,5 +1,7 @@
 import socialImg1 from "../content/socials/_github.svg"
 import socialImg2 from "../content/socials/_linkedin.svg"
+import socialImg3 from "../content/socials/_mail.svg"
+
 
 
 type Social = {
@@ -31,6 +33,12 @@ const presentation: Presentation = {
       label: "LinkedIn",
       link: "https://ca.linkedin.com/in/aarham-haider-5a0a4a1bb",
       image: socialImg2
+
+    },
+    {
+      label: "Gmail",
+      link: "mailto:aarham.haider@gmail.com",
+      image: socialImg3
 
     },
   ],

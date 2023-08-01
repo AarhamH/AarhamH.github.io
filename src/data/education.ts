@@ -22,7 +22,7 @@ const education: Education[] = [
   },
   {
     course: "CMPT 354: Database Systems I",
-    content: "Implemented database systems using SQL Server and learned about entities and schema design",
+    content: "Implemented database systems using SQL Server, and learned about entities and schema design",
   },
 ];
 

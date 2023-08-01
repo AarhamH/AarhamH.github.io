@@ -1,36 +1,52 @@
 ---
 import removeTrailingSlash from "@/utils/removeTrailingSlash";
 import presentation from "@/data/presentation";
-
+import logo from "../content/images/logo.png"
+import Resume from "../content/resume/Aarham-Haider-Resume.pdf"
 const pathname = removeTrailingSlash(Astro.url.pathname);
 ---
 
-<header class="z-40 flex w-full flex-col gap-2 md:flex-row md:justify-between">
-  <a href={`mailto:${presentation.mail}`} class="hover:text-neutral-100"
-    >{presentation.mail}</a
-  >
+<div class="flex items-center gap-4">
+  <a href="/">
+    <img class="w-8 h-4 md:w-7 h-7" src={logo}/>
+  </a>
+  <header class="z-40 flex w-full flex-col gap-2 md:flex-row md:justify-between">
+    <a href={`mailto:${presentation.mail}`} class="hover:text-neutral-100 "
+      >{presentation.mail}</a
+    >
 
-  <nav role="navigation">
-    <ul role="list" class="flex flex-row gap-2">
-      <li>
-        <a
-          href="/"
-          class:list={{
-            ["hover:text-neutral-100"]: true,
-            ["text-neutral-100"]: pathname === "/",
-          }}>Home</a
-        >
-      </li>
-      <li>/</li>
-      <li>
-        <a
-          href="/posts"
-          class:list={{
-            ["hover:text-neutral-100"]: true,
-            ["text-neutral-100"]: pathname === "/posts",
-          }}>Projects</a
-        >
-      </li>
-    </ul>
-  </nav>
-</header>
+    <nav role="navigation">
+      <ul role="list" class="flex flex-row gap-2">
+        <li>
+          <a
+            href="/"
+            class:list={{
+              ["hover:text-neutral-100"]: true,
+              ["text-neutral-100"]: pathname === "/",
+            }}>Home</a
+          >
+        </li>
+        <li>/</li>
+        <li>
+          <a
+            href="/posts"
+            class:list={{
+              ["hover:text-neutral-100"]: true,
+              ["text-neutral-100"]: pathname === "/posts",
+            }}>Projects</a
+          >
+        </li>
+        <li>/</li>
+        <li>
+          <a
+            href={Resume} download
+            class:list={{
+              ["hover:text-neutral-100"]: true,
+            }}>Resume</a
+          >
+          
+        </li>
+      </ul>
+    </nav>
+  </header>
+</div>

@@ -32,12 +32,12 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
     <article class="flex flex-col">
       
       <header class="flex w-full flex-row justify-between gap-3 items-center pb-4">
-        <h3 class="text-lg text-emerald-400">Selected Projects</h3>
+        <h3 class="text-lg text-emerald-400">Education</h3>
         <div class="flex-grow mx-3">
           <hr class="h-px min-w-1 max-w-3 opacity-40 bg-emerald-200 border-0">        
         </div>
       </header>
-      <p class="pb-6 pt-3 decoration-4 text-white text-md">~     {presentation.education}     ~</p>
+      <p class="pb-6 pt-3 decoration-4 text-neutral-200 text-md">~     {presentation.education}     ~</p>
       <div class="pl-4">
         {
           education.map((educations)=>(
@@ -105,15 +105,12 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
     </article>
 
     <article class="flex flex-col gap-8">
-      <header class="flex w-full flex-row justify-between gap-2">
-        <h3 class="text-lg text-emerald-400">Get in touch</h3>
+      <header class="flex w-full flex-row justify-between gap-3 items-center">
+        <h3 class="text-lg text-emerald-400">Contact Me</h3>
+        <div class="flex-grow mx-3">
+          <hr class="h-px min-w-1 max-w-3 opacity-40 bg-emerald-200 border-0">        
+        </div>
       </header>
-      <p>
-        Email me at <Link
-          href={`mailto:${presentation.mail}`}
-          label={presentation.mail}
-        /> or follow me via my social links.
-      </p>
 
       <SocialLinks />
     </article>
