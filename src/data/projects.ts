@@ -1,7 +1,7 @@
 import projImg1 from '../content/images/music-player.png'
 import projImg2 from '../content/images/nba-quicksearch.png'
 import projImg3 from '../content/images/portfolio.png'
-import projImg4 from '../content/images/test.png'
+import projImg4 from '../content/images/_image-editor.png'
 
 
 
