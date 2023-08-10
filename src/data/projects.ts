@@ -49,7 +49,7 @@ const projects: Project[] = [
   {
     title: "Portfolio",
     techs: ["Astro", "Typescript", "Tailwind", "Azure"],
-    link: "https://github.com/AarhamH/react-site",
+    link: "https://github.com/AarhamH/aarhamh.github.io",
     year: "2023",
     important: true,
     image: projImg3
