@@ -1,7 +1,8 @@
 import projImg1 from '../content/images/music-player.png'
 import projImg2 from '../content/images/nba-quicksearch.png'
-import projImg3 from '../content/images/portfolio.png'
+import projImg3 from '../content/images/piano.png'
 import projImg4 from '../content/images/_image-editor.png'
+
 
 
 
@@ -16,8 +17,16 @@ export type Project = {
 
 const projects: Project[] = [
   {
+    title: "MyPiano",
+    techs: ["C#","ASP.NET","JavaScript","Vue","PostgreSQL","Docker"],
+    link: "https://github.com/AarhamH/MyPiano",
+    year: "2023",
+    important: true,
+    image: projImg3
+  },
+  {
     title: "MVVM Music Player",
-    techs: ["C#", "XAML", "Entity Framework Core","SQLite"],
+    techs: ["C#", ".NET WPF", "Entity Framework Core","SQLite", "NUnit"],
     link: "https://github.com/AarhamH/MVVM-MusicPlayer",
     year: "2023",
     important: true,
@@ -51,9 +60,10 @@ const projects: Project[] = [
     techs: ["Astro", "Typescript", "Tailwind", "Azure"],
     link: "https://github.com/AarhamH/aarhamh.github.io",
     year: "2023",
-    important: true,
+    important: false,
     image: projImg3
   },
+
 
 ];
 
