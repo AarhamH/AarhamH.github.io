@@ -17,6 +17,7 @@ const MAP_COLOR_VARIANT_TO_BG: Record<TailwindColor, string> = {
   fushia: "bg-fushia-500",
   pink: "bg-pink-500",
   rose: "bg-rose-500",
+  white: "bg-white"
 };
 
 const MAP_COLOR_VARIANT_TO_TEXT: Record<TailwindColor, string> = {
@@ -36,6 +37,7 @@ const MAP_COLOR_VARIANT_TO_TEXT: Record<TailwindColor, string> = {
   fushia: "text-fushia-500",
   pink: "text-pink-500",
   rose: "text-rose-500",
+  white: "text-white"
 };
 
 export { MAP_COLOR_VARIANT_TO_BG, MAP_COLOR_VARIANT_TO_TEXT };
