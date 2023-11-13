@@ -2,17 +2,17 @@ import python from '../content/technologies/_python.svg'
 import csharp from '../content/technologies/_csharp.svg'
 import cpp from '../content/technologies/_cpp.svg'
 import clang from '../content/technologies/_c.svg'
-import html from '../content/technologies/_html.svg'
-import css from '../content/technologies/_css.svg'
 import javascript from '../content/technologies/_javascript.svg'
+import sql from '../content/technologies/_sql.svg'
+import java from '../content/technologies/_java.svg'
 
-import dotnet from '../content/technologies/_dotnet.svg'
+import aspnet from '../content/technologies/_dotnet.svg'
 import react from '../content/technologies/_react.svg'
 import git from '../content/technologies/_git.svg'
-import sqlite from '../content/technologies/_sqlite.svg'
 import azure from '../content/technologies/_azure.svg'
-import linux from '../content/technologies/_linux.svg'
-import vue from '../content/technologies/_vue.svg'
+import postgresql from '../content/technologies/_postgresql.svg'
+import jest from '../content/technologies/_jest.svg'
+import docker from '../content/technologies/_docker.svg'
 
 
 export type Technology = {
@@ -42,29 +42,33 @@ export const languages : Technology[] =
         link: "https://www.python.org/"
 
     },
-    {   name: 'HTML',
-        language: html,
-        link: "https://developer.mozilla.org/en-US/docs/Web/HTML"
+    {   name: 'SQL',
+        language: sql,
+        link: "https://en.wikipedia.org/wiki/SQL"
 
     },
-    {   name: 'CSS',
-        language: css,
-        link: "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    {   name: 'Java',
+        language: java,
+        link: "https://www.java.com/en/"
 
-    },
+    }, 
     {   name: 'JavaScript',
         language: javascript,
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
 
     },
 
-
 ]
 
 export const technologies : Technology[] = 
 [
+    {   name: 'Git',
+        language: git,
+        link: "https://git-scm.com/"
+
+    },
     {   name: 'ASP.NET',
-        language: dotnet,
+        language: aspnet,
         link: "https://dotnet.microsoft.com/en-us/"
 
     },
@@ -73,30 +77,28 @@ export const technologies : Technology[] =
         link: "https://azure.microsoft.com/en-ca"
 
     },
-    {   name: 'SQLite',
-         language: sqlite,
-         link: "https://www.sqlite.org/index.html"
+    {   name: 'PostgreSQL',
+        language: postgresql,
+        link: "https://www.postgresql.org/"
 
     },
-    {   name: 'Vue.js',
-        language: vue,
-        link: "https://nodejs.org/en"
+    {   name: 'Jest',
+         language: jest,
+         link: "https://www.sqlite.org/index.html"
+
     },
     {   name: 'React.js',
         language: react,
         link: "https://react.dev/"
 
     },
-    {   name: 'Git',
-        language: git,
-        link: "https://git-scm.com/"
+    {   name: 'Docker',
+        language: docker,
+        link: "https://www.docker.com/"
 
     },
-    {   name: 'Linux',
-        language: linux,
-        link: "https://ubuntu.com/"
 
-    },
+
 
 
 
