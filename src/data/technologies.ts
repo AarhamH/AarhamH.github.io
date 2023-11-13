@@ -12,7 +12,7 @@ import git from '../content/technologies/_git.svg'
 import sqlite from '../content/technologies/_sqlite.svg'
 import azure from '../content/technologies/_azure.svg'
 import linux from '../content/technologies/_linux.svg'
-import node from '../content/technologies/_nodejs.svg'
+import vue from '../content/technologies/_vue.svg'
 
 
 export type Technology = {
@@ -63,7 +63,7 @@ export const languages : Technology[] =
 
 export const technologies : Technology[] = 
 [
-    {   name: '.NET',
+    {   name: 'ASP.NET',
         language: dotnet,
         link: "https://dotnet.microsoft.com/en-us/"
 
@@ -78,11 +78,11 @@ export const technologies : Technology[] =
          link: "https://www.sqlite.org/index.html"
 
     },
-    {   name: 'NodeJS',
-        language: node,
+    {   name: 'Vue.js',
+        language: vue,
         link: "https://nodejs.org/en"
     },
-    {   name: 'React',
+    {   name: 'React.js',
         language: react,
         link: "https://react.dev/"
 
