@@ -63,6 +63,24 @@ const projects: Project[] = [
     important: false,
     image: projImg3
   },
+  {
+    title: "Multithread Chat Program",
+    techs: ["C", "Linux", "Pthreads", "Sockets", "UDP"],
+    link: "https://github.com/AarhamH/multithread-chat-cli",
+    year: "2023",
+    important: false,
+    image: projImg3
+  },
+  {
+    title: "MenuMap",
+    techs: ["JavaScript", "React", "Tailwind", "Jest", "Netlify"],
+    link: "https://github.com/AarhamH/MenuMap",
+    year: "2023",
+    important: false,
+    image: projImg3
+  },
+
+  
 
 
 ];
