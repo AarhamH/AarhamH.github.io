@@ -5,7 +5,10 @@ import clang from '../content/technologies/_c.svg'
 import javascript from '../content/technologies/_javascript.svg'
 import sql from '../content/technologies/_sql.svg'
 import java from '../content/technologies/_java.svg'
+import rust from '../content/technologies/_rust.png'
+import vue from '../content/technologies/_vue.svg'
 
+import tauri from '../content/technologies/_tauri.svg'
 import aspnet from '../content/technologies/_dotnet.svg'
 import react from '../content/technologies/_react.svg'
 import git from '../content/technologies/_git.svg'
@@ -13,7 +16,8 @@ import azure from '../content/technologies/_azure.svg'
 import postgresql from '../content/technologies/_postgresql.svg'
 import jest from '../content/technologies/_jest.svg'
 import docker from '../content/technologies/_docker.svg'
-
+import sqlite from '../content/technologies/_sqlite.svg'
+import linux from '../content/technologies/_linux.svg'
 
 export type Technology = {
     name: string
@@ -23,6 +27,12 @@ export type Technology = {
 
 export const languages : Technology[] = 
 [
+    {   name: 'Rust',
+        language: rust,
+        link: "https://www.rust-lang.org/"
+
+    }, 
+ 
     {   name: 'C#',
         language: csharp,
         link: "https://learn.microsoft.com/en-us/dotnet/csharp/"
@@ -47,19 +57,42 @@ export const languages : Technology[] =
         link: "https://en.wikipedia.org/wiki/SQL"
 
     },
-    {   name: 'Java',
-        language: java,
-        link: "https://www.java.com/en/"
-
-    }, 
-    {   name: 'JavaScript',
+   {   name: 'JavaScript',
         language: javascript,
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
 
     },
 
 ]
+export const frameworks : Technology[] = 
+[
+    {   name: 'Tauri',
+        language: tauri,
+        link: "https://tauri.app/"
 
+    },
+    {   name: 'Vue.js',
+        language: vue,
+        link: "https://vuejs.org/"
+
+    },
+ 
+    {   name: 'ASP.NET',
+        language: aspnet,
+        link: "https://dotnet.microsoft.com/en-us/"
+
+    },
+    {   name: 'Jest',
+         language: jest,
+         link: "https://jestjs.io/"
+    },
+    {   name: 'React.js',
+        language: react,
+        link: "https://react.dev/"
+
+    },
+
+]
 export const technologies : Technology[] = 
 [
     {   name: 'Git',
@@ -67,12 +100,12 @@ export const technologies : Technology[] =
         link: "https://git-scm.com/"
 
     },
-    {   name: 'ASP.NET',
-        language: aspnet,
-        link: "https://dotnet.microsoft.com/en-us/"
+    {   name: 'Linux',
+        language: linux,
+        link: "https://ubuntu.com/"
 
     },
-    {   name: 'Azure',
+   {   name: 'Azure',
         language: azure,
         link: "https://azure.microsoft.com/en-ca"
 
@@ -82,17 +115,13 @@ export const technologies : Technology[] =
         link: "https://www.postgresql.org/"
 
     },
-    {   name: 'Jest',
-         language: jest,
-         link: "https://www.sqlite.org/index.html"
+     {   name: 'SQLite',
+        language: sqlite,
+        link: "https://www.sqlite.org/index.html"
 
     },
-    {   name: 'React.js',
-        language: react,
-        link: "https://react.dev/"
-
-    },
-    {   name: 'Docker',
+    
+   {   name: 'Docker',
         language: docker,
         link: "https://www.docker.com/"
 

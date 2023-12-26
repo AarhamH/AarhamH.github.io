@@ -17,11 +17,11 @@ const { title, techs, link, image, important } = Astro.props;
       {
         projects.sort((b,a) => parseInt(a.year) - parseInt(b.year)).map((project) => (
           <a
-            class="group flex flex-col bg-rose-500 bg-opacity-0 gap-2 border-t border-neutral-700 py-4 duration-300 transition-all hover:bg-opacity-10"
+            class="group flex flex-col bg-rose-400 bg-opacity-0 gap-2 border-t border-neutral-700 py-4 duration-300 transition-all hover:bg-opacity-10"
             href={project.link}
           >
             <div class="flex w-full items-center justify-between">
-              <h2 class="text-lg pl-5 transition-color duration-300 group-hover:text-rose-700">{project.title}</h2>
+              <h2 class="text-lg pl-5 transition-color duration-300 group-hover:text-rose-400">{project.title}</h2>
               <div class="pr-5 flex flex-row items-center gap-4">
                 <p>{project.year}</p>
                 <svg
@@ -48,7 +48,7 @@ const { title, techs, link, image, important } = Astro.props;
             </div>
             <div class="pl-5 flex flex-wrap gap-2">
             {project.techs.map((tech) => (
-              <div class="px-2 bg-rose-500 opacity-50 duration-300 rounded-lg inline-flex items-center border border-rose-500 transition-all group-hover:opacity-100 group-hover:bg-black">
+              <div class="px-2 bg-rose-400 opacity-50 duration-300 rounded-lg inline-flex items-center border border-rose-400 transition-all group-hover:opacity-100 group-hover:bg-black">
                 <p class="text-[12px] text-black duration-300 transition-all  group-hover:text-white">{tech}</p>
             </div>
             ))}

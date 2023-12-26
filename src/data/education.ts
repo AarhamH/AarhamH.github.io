@@ -6,7 +6,7 @@ export type Education = {
 const education: Education[] = [
   {
     course: "CMPT 225: Data Structures and Algorithms",
-    content: "Studies designs of data structures, such as trees, heaps, hashsets, and sorting algorithms in C++",
+    content: "Studied designs of data structures, such as trees, heaps, hashsets, and sorting algorithms in C++",
   },
   {
     course: "CMPT 276: Introduction to Software Engineering",
@@ -18,11 +18,11 @@ const education: Education[] = [
   },
   {
     course: "CMPT 300: Operating Systems I",
-    content: "Studied file systems, multi-threaded programming, processes, and memory in C",
+    content: "Studied file systems, multi-threaded programming, I/O scheduling, and memory in C",
   },
   {
     course: "CMPT 354: Database Systems I",
-    content: "Learned about theoretical models, particularly Entity-Relationships, and table querying using SQL",
+    content: "Learned about theoretical models, particularly Entity-Relationships, querying using SQL, and database optimization via functional dependencies.",
   },
 ];
 

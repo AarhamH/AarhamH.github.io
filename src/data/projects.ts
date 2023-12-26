@@ -1,7 +1,7 @@
 import projImg1 from '../content/images/music-player.png'
 import projImg2 from '../content/images/nba-quicksearch.png'
 import projImg3 from '../content/images/piano.png'
-import projImg4 from '../content/images/_image-editor.png'
+import projImg4 from '../content/images/menumap.png'
 
 
 
@@ -45,7 +45,7 @@ const projects: Project[] = [
     techs: ["Python", "PyGame", "Numpy"],
     link: "https://github.com/AarhamH/python-image-manipulator",
     year: "2021",
-    important: true,
+    important: false,
     image: projImg4
   },
   {
@@ -73,11 +73,11 @@ const projects: Project[] = [
   },
   {
     title: "MenuMap",
-    techs: ["JavaScript", "React", "Tailwind", "Jest", "Netlify"],
+    techs: ["JavaScript", "React", "Tailwind", "Jest", "Netlify", "AGILE", "JIRA"],
     link: "https://github.com/AarhamH/MenuMap",
     year: "2023",
-    important: false,
-    image: projImg3
+    important: true,
+    image: projImg4
   },
 
   
