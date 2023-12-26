@@ -13,6 +13,7 @@ import education from "@/data/education";
 import projects from "@/data/projects";
 import {languages} from'@/data/technologies';
 import {technologies} from'@/data/technologies';
+import {frameworks} from '@/data/technologies';
 
 import TechnologyCard from "@/components/TechnologyCard.astro";
 
@@ -28,10 +29,35 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
       />
     </article>
 
-    <article class="flex flex-col">
+    <article class="flex flex-col pb-20">
       
       <header class="flex w-full flex-row justify-between gap-3 items-center pb-4">
-        <h3 class="text-lg text-rose-500">Education</h3>
+        <h3 class="text-lg text-rose-400">Experience</h3>
+        <div class="flex-grow mx-3">
+          <hr class="h-px min-w-1 max-w-3 opacity-40 bg-rose-200 border-0">        
+        </div>
+      </header>
+      <div>
+ <p class="pb-6 pt-3 decoration-4 text-neutral-200  text-lg">Junior Application Developer | Modrinth</p>
+      <div class="pl-4">
+            <div class="flex">
+              <p class="text-rose-400 pb-1 italic">⮞ </p>
+              <p class="ml-2 text">Built and deployed cross-platform desktop applications to gamers and hobbyists who are passionate about in-game mods. Demonstrated leadership during our migration from Electron.js to Tauri through mentorship and team engagement.</p> 
+      </div>
+      <p class="pl-4 text-rose-400 mt-4">Rust | Vue.js | TypeScript | Git | Selenium| Docker </p> 
+
+      </div>
+      <p class="pb-6 pt-8 decoration-4 text-neutral-200  text-lg">Peer Tutor | SFU</p>
+      <div class="pl-4">
+            <div class="flex">
+              <p class="text-rose-400 pb-1 italic">⮞ </p>
+              <p class="ml-2 text"> Regularly explained computer science concepts and assisted with assignments for first-year students, ranging from fundamental data structures such as arrays, trees, and linked-lists, all the way to principles in Object-Oriented Design in C++.</p>  
+      </div>
+      <p class="pl-4 text-rose-400 mt-4">C++ | Linux | DS & A | OOP  </p> 
+    <article class="flex flex-col">
+      
+      <header class="mt-20 flex w-full flex-row justify-between gap-3 items-center pb-4">
+        <h3 class="text-lg text-rose-400">Education</h3>
         <div class="flex-grow mx-3">
           <hr class="h-px min-w-1 max-w-3 opacity-40 bg-rose-200 border-0">        
         </div>
@@ -41,7 +67,7 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
         {
           education.map((educations)=>(
             <div>
-              <p class="text-rose-500 pb-1 italic">⮞ {educations.course}</p>
+              <p class="text-rose-400 pb-1 italic">⮞ {educations.course}</p>
               <p class="text-[12px] pl-4 pb-4">⮩  {educations.content}</p>
             </div>
           ))
@@ -52,8 +78,8 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
 
     <article class="flex flex-col">
       
-      <header class="flex w-full flex-row justify-between gap-3 items-center pb-4">
-        <h3 class="text-lg text-rose-500">Competencies</h3>
+      <header class="mt-20 flex w-full flex-row justify-between gap-3 items-center pb-4">
+        <h3 class="text-lg text-rose-400">Competencies</h3>
         <div class="flex-grow mx-3">
           <hr class="h-px min-w-1 max-w-3 opacity-40 bg-rose-200 border-0">        
         </div>
@@ -74,21 +100,33 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
       </div>
 
       <h3 class="bottom-0 left-0 w-full flex justify-center items-center p-3">
-        Technologies
+        Frameworks
+      </h3>
+      <div class="flex justify-center pb-10">
+        <section class="grid grid-cols-3 gap-5 sm:grid-cols-5">
+          {
+            frameworks.length !== 0 &&
+            frameworks.map((framework) => <TechnologyCard {...framework} />)
+          }
+        </section>
+      </div>
+      <h3 class="bottom-0 left-0 w-full flex justify-center items-center p-3">
+        Tools
       </h3>
       <div class="flex justify-center">
-        <section class="grid grid-cols-3 gap-5 sm:grid-cols-7">
+        <section class="grid grid-cols-3 gap-5 sm:grid-cols-6">
           {
             technologies.length !== 0 &&
             technologies.map((technology) => <TechnologyCard {...technology} />)
           }
         </section>
       </div>
+
     </article>
 
     <article class="flex flex-col gap-8">
-      <header class="flex w-full flex-row justify-between gap-3 items-center pb-4">
-        <h3 class="text-lg text-rose-500">Selected Projects</h3>
+      <header class="mt-20 flex w-full flex-row justify-between gap-3 items-center pb-4">
+        <h3 class="text-lg text-rose-400">Selected Projects</h3>
         <div class="flex-grow mx-3">
           <hr class="h-px min-w-1 max-w-3 opacity-40 bg-rose-200 border-0">        
         </div>
@@ -104,8 +142,8 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
     </article>
 
     <article class="flex flex-col gap-8">
-      <header class="flex w-full flex-row justify-between gap-3 items-center">
-        <h3 class="text-lg text-rose-500">Contact Me</h3>
+      <header class="mt-20 flex w-full flex-row justify-between gap-3 items-center">
+        <h3 class="text-lg text-rose-400">Contact Me</h3>
         <div class="flex-grow mx-3">
           <hr class="h-px min-w-1 max-w-3 opacity-40 bg-rose-200 border-0">        
         </div>

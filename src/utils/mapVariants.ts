@@ -36,7 +36,7 @@ const MAP_COLOR_VARIANT_TO_TEXT: Record<TailwindColor, string> = {
   purple: "text-purple-500",
   fushia: "text-fushia-500",
   pink: "text-pink-500",
-  rose: "text-rose-500",
+  rose: "text-rose-400",
   white: "text-white"
 };
 
