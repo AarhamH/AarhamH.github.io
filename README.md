@@ -1,6 +1,6 @@
 # <img src="/src/content/images/logo.png" alt="Logo" width="23">  Welcome to aarhamh.com 
 
-Welcome to my personal portfolio! Here, you can find information about my background, courses, experiences, skills, resume, and personal projects.
+Welcome to my personal portfolio! 
 
 ## Links
 - [aarhamh.com](https://aarhamh.com/)
