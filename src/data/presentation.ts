@@ -20,8 +20,8 @@ type Presentation = {
 
 const presentation: Presentation = {
   mail: "aarham.haider@gmail.com",
-  title: "Hey, I’m Aarham!",
-  description:"I am a *fourth year CS Student @ SFU*, expecting to graduate in May 2025. I have a passion for *problem solving* and interest in building services that cater to the needs of many people. As a developer, I have honed skills in various technologies and have had extensive real world experience in software teams.\n As an application developer at Modrinth, I worked extensively with *Rust* in building middleware services for the Theseus client and providing compatibility with the user's native JRE, along with work in the client side by building interactive UIs with *Vue.js*. In my spare time, I have gained development experience with *C#* and *C++* in Windows development environments, and have used technologies such as ASP.NET, WPF, and CMake. I also enjoy exploring the functional world by experimenting with Haskell and Lisp. Apart from building software, I enjoy classical music, basketball, and poking trees.",
+  title: "hey, i’m aarham!",
+  description:"I am interested in solving problems and building fun software. Nearing 2 years of professional software engineering experience, I have worked in diverse software teams and expanded my domain knowledge in an array of technologies, software patterns, and techniques. As a hobby, I like messing around with Haskell and LISP dialects. Apart from software, I enjoy classical music, basketball, and poking trees.",
   education: "Simon Fraser University | Bachelor's of Applied Science in Computer Science | 3.75/4.33 GPA",
   socials: [
     {
