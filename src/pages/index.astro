@@ -4,6 +4,8 @@ import { getCollection } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 import SocialLinks from "@/components/SocialLinks.astro";
 import ProjectCard from "@/components/ProjectCard.astro";
+import EducationArticle from "@/components/EducationArticle.astro";
+import ExperienceTimeline from "@/components/ExperienceTimeline.astro";
 import Link from "@/components/shared/Link.astro";
 import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 import Resume from "../content/resume/Aarham-Haider-Resume.pdf"
@@ -22,67 +24,34 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
 <Layout>
   <main class="flex flex-col gap-20">
     <article class="flex flex-col gap-8">
-      <h1 class="text-3xl text-neutral-100">{presentation.title}</h1>
+      <h1 class="text-3xl font-bold text-rose-400">{presentation.title}</h1>
       <h2
         class="max-w-[100ch] leading-6"
         set:html={convertAsteriskToStrongTag(presentation.description)}
       />
     </article>
 
-    <article class="flex flex-col pb-20">
+    <article class="flex flex-col">
       
       <header class="flex w-full flex-row justify-between gap-3 items-center pb-4">
-        <h3 class="text-lg text-rose-400">Experience</h3>
-        <div class="flex-grow mx-3">
-          <hr class="h-px min-w-1 max-w-3 opacity-40 bg-rose-200 border-0">        
-        </div>
+        <h3 class="text-xl font-bold text-rose-400">// experience //</h3>
       </header>
       <div>
- <p class="pb-6 pt-3 decoration-4 text-neutral-200  text-lg">Junior Application Developer | Modrinth</p>
-      <div class="pl-4">
-            <div class="flex">
-              <p class="text-rose-400 pb-1 italic">⮞ </p>
-              <p class="ml-2 text">Built and deployed cross-platform desktop applications to gamers and hobbyists who are passionate about in-game mods. Demonstrated leadership during our migration from Electron.js to Tauri through mentorship and team engagement.</p> 
-      </div>
-      <p class="pl-4 text-rose-400 mt-4">Rust | Vue.js | TypeScript | Git | Selenium| Docker </p> 
+      <ExperienceTimeline/>
 
-      </div>
-      <p class="pb-6 pt-8 decoration-4 text-neutral-200  text-lg">Teaching Assistant | SFU</p>
-      <div class="pl-4">
-            <div class="flex">
-              <p class="text-rose-400 pb-1 italic">⮞ </p>
-              <p class="ml-2 text"> Regularly explained computer science concepts and assisted with assignments for first-year students, ranging from fundamental data structures such as arrays, trees, and linked-lists, all the way to principles in Object-Oriented Design in C++.</p>  
-      </div>
-      <p class="pl-4 text-rose-400 mt-4">C++ | Linux | DS & A | OOP  </p> 
     <article class="flex flex-col">
       
-      <header class="mt-20 flex w-full flex-row justify-between gap-3 items-center pb-4">
-        <h3 class="text-lg text-rose-400">Education</h3>
-        <div class="flex-grow mx-3">
-          <hr class="h-px min-w-1 max-w-3 opacity-40 bg-rose-200 border-0">        
-        </div>
+      <header class="mt-10 flex w-full flex-row justify-between gap-3 items-center pb-4">
+            <h3 class="text-xl font-bold text-rose-400">// education //</h3>
       </header>
       <p class="pb-6 pt-3 decoration-4 text-neutral-200 text-md">~     {presentation.education}     ~</p>
-      <div class="pl-4">
-        {
-          education.map((educations)=>(
-            <div>
-              <p class="text-rose-400 pb-1 italic">⮞ {educations.course}</p>
-              <p class="text-[12px] pl-4 pb-4">⮩  {educations.content}</p>
-            </div>
-          ))
-        }
-      </div>
-
+    <EducationArticle/>
     </article>
-
+  
     <article class="flex flex-col">
       
       <header class="mt-20 flex w-full flex-row justify-between gap-3 items-center pb-4">
-        <h3 class="text-lg text-rose-400">Competencies</h3>
-        <div class="flex-grow mx-3">
-          <hr class="h-px min-w-1 max-w-3 opacity-40 bg-rose-200 border-0">        
-        </div>
+            <h3 class="text-xl font-bold text-rose-400">// competencies //</h3>
       </header>
       
 
@@ -126,10 +95,7 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
 
     <article class="flex flex-col gap-8">
       <header class="mt-20 flex w-full flex-row justify-between gap-3 items-center pb-4">
-        <h3 class="text-lg text-rose-400">Selected Projects</h3>
-        <div class="flex-grow mx-3">
-          <hr class="h-px min-w-1 max-w-3 opacity-40 bg-rose-200 border-0">        
-        </div>
+            <h3 class="text-xl font-bold text-rose-400">// selected projects //</h3>
       </header>
       {projects.length === 0 && <p>Oops, I must work^^^^^</p>}
 
@@ -143,10 +109,7 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
 
     <article class="flex flex-col gap-8">
       <header class="mt-20 flex w-full flex-row justify-between gap-3 items-center">
-        <h3 class="text-lg text-rose-400">Contact Me</h3>
-        <div class="flex-grow mx-3">
-          <hr class="h-px min-w-1 max-w-3 opacity-40 bg-rose-200 border-0">        
-        </div>
+            <h3 class="text-xl font-bold text-rose-400">// contact me //</h3>
       </header>
 
       <SocialLinks />
