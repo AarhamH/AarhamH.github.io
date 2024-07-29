@@ -2,7 +2,7 @@
 import type { Technology } from "@/data/technologies";
 type Props = Technology;
 
-const {name, language, link} = Astro.props;
+const {name, image, link} = Astro.props;
 
 const formatTechs = (values: string[]) =>
   values.toString().replaceAll(",", " • ");
@@ -16,7 +16,7 @@ const formatTechs = (values: string[]) =>
         rel="noreferrer"
       >
           <div class="relative pb-4  flex justify-center items-center">
-            <img src={language} class="opacity-100 pb-3 p-3" alt="Image" style="width:70px;height:70px" />
+            <img src={image} class="opacity-100 pb-3 p-3" alt="Image" style="width:70px;height:70px" />
             <p class="absolute bottom-0 left-0 w-full flex justify-center items-center px-2 py-1">
               {name}
             </p>

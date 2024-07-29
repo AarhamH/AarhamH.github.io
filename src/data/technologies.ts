@@ -1,94 +1,72 @@
-import python from '../content/technologies/_python.svg'
-import csharp from '../content/technologies/_csharp.svg'
-import cpp from '../content/technologies/_cpp.svg'
-import clang from '../content/technologies/_c.svg'
-import javascript from '../content/technologies/_javascript.svg'
-import sql from '../content/technologies/_sql.svg'
-import java from '../content/technologies/_java.svg'
-import rust from '../content/technologies/_rust.png'
-import vue from '../content/technologies/_vue.svg'
-
-import tauri from '../content/technologies/_tauri.svg'
-import aspnet from '../content/technologies/_dotnet.svg'
-import react from '../content/technologies/_react.svg'
-import git from '../content/technologies/_git.svg'
-import azure from '../content/technologies/_azure.svg'
-import postgresql from '../content/technologies/_postgresql.svg'
-import jest from '../content/technologies/_jest.svg'
-import docker from '../content/technologies/_docker.svg'
-import sqlite from '../content/technologies/_sqlite.svg'
-import linux from '../content/technologies/_linux.svg'
-
 export type Technology = {
     name: string
-    language: string
+    image: string
     link: string
 }
 
 export const languages : Technology[] = 
 [
+    {   name: 'Go',
+        image: "https://go.dev/images/go-logo-white.svg",
+        link: "https://go.dev/"
+
+    },
+    {   name: 'TypeScript',
+        image: "https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000",
+        link: "https://www.typescriptlang.org/"
+
+    },
     {   name: 'Rust',
-        language: rust,
+        image: "https://img.icons8.com/?size=100&id=XWesbnSd4AUa&format=png&color=FFFFFF",
         link: "https://www.rust-lang.org/"
 
     }, 
- 
-    {   name: 'C#',
-        language: csharp,
-        link: "https://learn.microsoft.com/en-us/dotnet/csharp/"
-    },
-    {   name: 'C',
-        language: clang,
-        link: "https://learn.microsoft.com/en-us/cpp/c-language/?view=msvc-170"
-
-    },
     {   name: 'C++',
-        language: cpp,
+        image: "https://img.icons8.com/?size=100&id=40669&format=png&color=000000",
         link: "https://learn.microsoft.com/en-us/cpp/cpp/?view=msvc-170"
 
     },
+    {   name: 'C#',
+        image: "https://img.icons8.com/?size=100&id=55251&format=png&color=000000",
+        link: "https://learn.microsoft.com/en-us/dotnet/csharp/"
+    },
     {   name: 'Python',
-        language: python,
+        image: "https://img.icons8.com/?size=100&id=l75OEUJkPAk4&format=png&color=000000",
         link: "https://www.python.org/"
 
     },
-    {   name: 'SQL',
-        language: sql,
-        link: "https://en.wikipedia.org/wiki/SQL"
-
-    },
-   {   name: 'JavaScript',
-        language: javascript,
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+   {   name: 'Haskell',
+        image: "https://img.icons8.com/?size=100&id=Lvn3jvfnl1XF&format=png&color=000000",
+        link: "https://www.haskell.org/"
 
     },
 
 ]
 export const frameworks : Technology[] = 
 [
+    {   name: 'React.js',
+        image: "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000",
+        link: "https://react.dev/"
+
+    },
+    {   name: 'GraphQL',
+        image: "https://img.icons8.com/?size=100&id=KRA1PoZgRrca&format=png&color=000000",
+        link: "https://graphql.org/"
+
+    },
+    {   name: 'Playwright',
+        image: "https://playwright.dev/img/playwright-logo.svg",
+        link: "https://playwright.dev/"
+
+    },
     {   name: 'Tauri',
-        language: tauri,
+        image: "https://cdn.worldvectorlogo.com/logos/tauri-1.svg",
         link: "https://tauri.app/"
 
     },
-    {   name: 'Vue.js',
-        language: vue,
-        link: "https://vuejs.org/"
-
-    },
- 
-    {   name: 'ASP.NET',
-        language: aspnet,
-        link: "https://dotnet.microsoft.com/en-us/"
-
-    },
-    {   name: 'Jest',
-         language: jest,
-         link: "https://jestjs.io/"
-    },
-    {   name: 'React.js',
-        language: react,
-        link: "https://react.dev/"
+    {   name: 'Qt',
+        image: "https://img.icons8.com/?size=100&id=47039&format=png&color=12B886",
+        link: "https://www.qt.io/"
 
     },
 
@@ -96,33 +74,33 @@ export const frameworks : Technology[] =
 export const technologies : Technology[] = 
 [
     {   name: 'Git',
-        language: git,
+        image: "https://img.icons8.com/?size=100&id=20906&format=png&color=000000",
         link: "https://git-scm.com/"
 
     },
     {   name: 'Linux',
-        language: linux,
-        link: "https://ubuntu.com/"
+        image: "https://img.icons8.com/?size=100&id=17842&format=png&color=000000",
+        link: "https://fedoraproject.org/"
 
     },
    {   name: 'Azure',
-        language: azure,
+        image: "https://img.icons8.com/?size=100&id=VLKafOkk3sBX&format=png&color=000000",
         link: "https://azure.microsoft.com/en-ca"
 
     },
     {   name: 'PostgreSQL',
-        language: postgresql,
+        image: "https://img.icons8.com/?size=100&id=38561&format=png&color=000000",
         link: "https://www.postgresql.org/"
 
     },
      {   name: 'SQLite',
-        language: sqlite,
+        image: "https://img.icons8.com/?size=100&id=yjSayFwWHyCo&format=png&color=228BE6",
         link: "https://www.sqlite.org/index.html"
 
     },
     
    {   name: 'Docker',
-        language: docker,
+        image: "https://img.icons8.com/?size=100&id=cdYUlRaag9G9&format=png&color=000000",
         link: "https://www.docker.com/"
 
     },
