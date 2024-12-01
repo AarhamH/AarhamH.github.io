@@ -13,12 +13,12 @@ const formatTechs = (values: string[]) =>
   {
     isDisplayed && (
       <a
-        class="group flex w-full cursor-pointer relative rounded-md border border-neutral-700 h-64 p-1 transition-all duration-300 hover:-translate-y-2 hover:border-rose-400"
+        class="group flex w-fit cursor-pointer relative rounded-md border border-neutral-700 h-64 p-1 transition-all duration-300 hover:-translate-y-2 hover:border-rose-400"
         href={link}
         target="_blank"
         rel="noreferrer"
       >
-          <img src={image} class="opacity-100 transition-opacity duration-300 group-hover:opacity-5 h-64 w-96 object-cover" alt="Image"/>
+          <img src={image} class="opacity-100 transition-opacity duration-300 group-hover:opacity-5 w-96 object-cover" alt="Image"/>
           <div class="absolute inset-0 flex flex-col justify-center items-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             <p class="text-rose-400 text-2xl font-bold">{title}</p>
             <p>{formatTechs(techs)}</p>

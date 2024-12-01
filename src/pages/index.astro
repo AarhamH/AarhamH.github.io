@@ -4,14 +4,10 @@ import { getCollection } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 import SocialLinks from "@/components/SocialLinks.astro";
 import ProjectCard from "@/components/ProjectCard.astro";
-import EducationArticle from "@/components/EducationArticle.astro";
 import ExperienceTimeline from "@/components/ExperienceTimeline.astro";
-import Link from "@/components/shared/Link.astro";
 import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 import Resume from "../content/resume/Aarham-Haider-Resume.pdf"
-
 import presentation from "@/data/presentation";
-import education from "@/data/education";
 import projects from "@/data/projects";
 import {languages} from'@/data/technologies';
 import {technologies} from'@/data/technologies';
@@ -44,20 +40,17 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
       <header class="mt-10 flex w-full flex-row justify-between gap-3 items-center pb-4">
             <h3 class="text-xl font-bold text-rose-400">// education //</h3>
       </header>
-      <p class="pb-6 pt-3 decoration-4 text-neutral-200 text-md">~     {presentation.education}     ~</p>
-    <EducationArticle/>
-    </article>
+
+      <h3 class="text-lg font-semibold text-white">{presentation.education.institution}<h3>
+      <h3 class="text-normal font-normal">{presentation.education.degree}<h3>
+      <h3 class="text-xs font-thin">GPA: {presentation.education.gpa}/4.33<h3>
+      </article>
   
     <article class="flex flex-col">
       
       <header class="mt-20 flex w-full flex-row justify-between gap-3 items-center pb-4">
             <h3 class="text-xl font-bold text-rose-400">// competencies //</h3>
       </header>
-      
-
-      <h3 class="bottom-0 left-0 w-full flex justify-center items-center p-3">
-        Languages
-      </h3>
       <div class="flex justify-center pb-10">
 
         <section class="grid grid-cols-3 gap-5 sm:grid-cols-7">
@@ -65,34 +58,17 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
             languages.length !== 0 &&
               languages.map((language) => <TechnologyCard {...language} />)
           }
-        </section>
-      </div>
-
-      <h3 class="bottom-0 left-0 w-full flex justify-center items-center p-3">
-        Frameworks
-      </h3>
-      <div class="flex justify-center pb-10">
-        <section class="grid grid-cols-3 gap-5 sm:grid-cols-5">
-          {
-            frameworks.length !== 0 &&
-            frameworks.map((framework) => <TechnologyCard {...framework} />)
-          }
-        </section>
-      </div>
-      <h3 class="bottom-0 left-0 w-full flex justify-center items-center p-3">
-        Tools
-      </h3>
-      <div class="flex justify-center">
-        <section class="grid grid-cols-3 gap-5 sm:grid-cols-6">
           {
             technologies.length !== 0 &&
             technologies.map((technology) => <TechnologyCard {...technology} />)
           }
-        </section>
+          {
+            frameworks.length !== 0 &&
+            frameworks.map((framework) => <TechnologyCard {...framework} />)
+          }
+      </section>
       </div>
-
     </article>
-
     <article class="flex flex-col gap-8">
       <header class="mt-20 flex w-full flex-row justify-between gap-3 items-center pb-4">
             <h3 class="text-xl font-bold text-rose-400">// selected projects //</h3>

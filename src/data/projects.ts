@@ -1,7 +1,9 @@
 import musicplayer from '../content/images/music-player.png'
 import nbaquicksearch from '../content/images/nba-quicksearch.png'
 import piano from '../content/images/piano.png'
+import chamber from '../content/images/chamber.png'
 import lambda from '../content/images/lambda.png'
+import reggie from '../content/images/reggie-fsm.jpg'
 
 
 
@@ -17,19 +19,10 @@ export type Project = {
 
 const projects: Project[] = [
   {
-    title: "MyPiano",
-    techs: ["C#","ASP.NET","JavaScript","Vue","PostgreSQL","Docker"],
-    link: "https://github.com/AarhamH/MyPiano",
-    year: "2023",
-    isDisplayed: true,
-    image: piano
-  },
-  {
     title: "MVVM Music Player",
     techs: ["C#", ".NET WPF", "Entity Framework Core","SQLite", "NUnit"],
     link: "https://github.com/AarhamH/MVVM-MusicPlayer",
     year: "2023",
-    isDisplayed: true,
     image: musicplayer
   },
   {
@@ -37,7 +30,6 @@ const projects: Project[] = [
     techs: ["Javascript", "React Native", "Expo", "API"],
     link: "https://github.com/AarhamH/NBA-Quicksearch",
     year: "2023",
-    isDisplayed: true,
     image: nbaquicksearch
   },
   {
@@ -71,6 +63,14 @@ const projects: Project[] = [
     year: "2023",
   },
   {
+    title: "chamber",
+    techs: ["Rust", "TypeScript", "Tauri", "SQLite"],
+    link: "https://github.com/AarhamH/chamber",
+    year: "2024",
+    isDisplayed: true,
+    image: chamber
+  },
+  {
     title: "happy(lang)",
     techs: ["Haskell", "LISP"],
     link: "https://github.com/AarhamH/happylang",
@@ -78,9 +78,22 @@ const projects: Project[] = [
     isDisplayed: true,
     image: lambda
   },
-  
-
-
+  {
+    title: "reggie",
+    techs: ["Go"],
+    link: "https://github.com/AarhamH/reggie",
+    year: "2024",
+    isDisplayed: true,
+    image: reggie
+  },
+  {
+    title: "MyPiano",
+    techs: ["C#","ASP.NET","JavaScript","Vue","PostgreSQL","Docker"],
+    link: "https://github.com/AarhamH/MyPiano",
+    year: "2023",
+    isDisplayed: true,
+    image: piano
+  },
 ];
 
 export default projects;
