@@ -40,8 +40,11 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
       <header class="mt-10 flex w-full flex-row justify-between gap-3 items-center pb-4">
             <h3 class="text-xl font-bold text-rose-400">// education //</h3>
       </header>
-      <p class="pb-6 pt-3 decoration-4 text-neutral-200 text-md">~     {presentation.education}     ~</p>
-    </article>
+
+      <h3 class="text-lg font-semibold text-white">{presentation.education.institution}<h3>
+      <h3 class="text-normal font-normal">{presentation.education.degree}<h3>
+      <h3 class="text-xs font-thin">GPA: {presentation.education.gpa}/4.33<h3>
+      </article>
   
     <article class="flex flex-col">
       
