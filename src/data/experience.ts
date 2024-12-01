@@ -9,11 +9,11 @@ export type Experience = {
 
 const experience:Experience[] = [
   {
-    start:'July 2024',
-    end: 'present',
+    start:'May 2024',
+    end: 'December 2024',
     title: "Software Engineer Intern",
     company: "Harris Computer (Cayenta)",
-    description: "Currently constructing a modernized version of Cayenta's internal product repository platform abiding by new acceptance criteria. Spearheaded the evaluation and integration of Playwright as the E2E testing platform for UI stories.",
+    description: "Currently constructing a modernized version of Cayenta's internal product repository platform abiding by new acceptance criteria. Spearheaded the evaluation and integration of Playwright as the E2E testing platform for screen stories.",
     technologies: ["Go","React.js", "TypeScript", "GraphQL", "Playwright", "Docker"]  
   },
   {
@@ -21,7 +21,7 @@ const experience:Experience[] = [
     end: 'August 2023',
     title: "Junior Application Developer",
     company: "Modrinth",
-    description: "Built and deployed Modrinth Theseus, engaging in fullstack development and automated E2E testing. Demonstrated leadership during our migration from Electron.js to Tauri through mentorship and team engagement.",
+    description: "Built and deployed Modrinth Theseus and Labrinth, engaging in fullstack development and QA. Demonstrated leadership during our migration from Electron.js to Tauri through mentorship and team engagement.",
     technologies: ["Rust","Vue.js", "TypeScript", "Git", "Cypress", "Docker"]  
   },
   {
@@ -29,8 +29,8 @@ const experience:Experience[] = [
     end:'December 2022',
     title: "Undergraduate Teaching Assistant",
     company: "SFU",
-    description: "Regularly explained computer science concepts and assisted with assignments for first-year students, ranging from fundamental data structures such as arrays, trees, and linked-lists, all the way to principles in Object-Oriented Design in C++.",
-    technologies: ["C++","Linux", "DS & A" ,"OOP"]  
+    description: "Held lab sessions for over 30 students, covering lecture material and assignments. Built internal tooling in Python and C++ to streamline automated marking.",
+    technologies: ["C++", "Python", "Linux"]  
   },
 ];
 export default experience;
