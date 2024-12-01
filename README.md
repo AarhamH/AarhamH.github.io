@@ -16,11 +16,5 @@ This repository contains the source code for my personal portfolio website. Feel
 - Astro + TypeScript
 - Tailwind CSS
 
-### Deployment
-- Azure CI/CD
-- Azure Cloud
-- Github Actions CI/CD *(not primary)*
-- Github Pages *(not primary)*
-
 ### License
 The repo is under the MIT License, as I want others to use this site as an augmented template to an Astro web page.
