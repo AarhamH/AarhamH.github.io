@@ -2,10 +2,10 @@
 import experience from "@/data/experience"
 ---
 
-<ol class="relative border-l border-gray-200 dark:border-gray-700">
+<div class="relative border-l border-gray-200 dark:border-gray-700">
   {
   experience.map((exp) => (
-  <li class="mb-10 ml-4">
+  <div class="mb-10 ml-4">
     <div class="absolute w-3 h-3 bg-rose-400 rounded-full mt-1.5 -left-1.5 border border-rose-400 dark:border-gray-900 dark:bg-gray-700"></div>
     <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{exp.start} - {exp.end}</time>
     <h3 class="text-lg font-semibold text-white">{exp.title} | {exp.company}</h3>
@@ -15,7 +15,7 @@ import experience from "@/data/experience"
     <div class="mt-5">
       {exp.technologies.map((tech, techIndex) => (<span class="text-rose-300"> {tech} {techIndex < exp?.technologies.length - 1 && '|'}</span>))}
     </div>
-  </li>
+  </div>
   ))}
-</ol>
+</div>
 

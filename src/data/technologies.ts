@@ -83,11 +83,6 @@ export const technologies : Technology[] =
         link: "https://fedoraproject.org/"
 
     },
-   {   name: 'Azure',
-        image: "https://img.icons8.com/?size=100&id=VLKafOkk3sBX&format=png&color=000000",
-        link: "https://azure.microsoft.com/en-ca"
-
-    },
     {   name: 'PostgreSQL',
         image: "https://img.icons8.com/?size=100&id=38561&format=png&color=000000",
         link: "https://www.postgresql.org/"
