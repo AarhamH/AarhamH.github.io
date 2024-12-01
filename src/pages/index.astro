@@ -52,11 +52,6 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
       <header class="mt-20 flex w-full flex-row justify-between gap-3 items-center pb-4">
             <h3 class="text-xl font-bold text-rose-400">// competencies //</h3>
       </header>
-      
-
-      <h3 class="bottom-0 left-0 w-full flex justify-center items-center p-3">
-        Languages
-      </h3>
       <div class="flex justify-center pb-10">
 
         <section class="grid grid-cols-3 gap-5 sm:grid-cols-7">
@@ -64,34 +59,17 @@ import TechnologyCard from "@/components/TechnologyCard.astro";
             languages.length !== 0 &&
               languages.map((language) => <TechnologyCard {...language} />)
           }
-        </section>
-      </div>
-
-      <h3 class="bottom-0 left-0 w-full flex justify-center items-center p-3">
-        Frameworks
-      </h3>
-      <div class="flex justify-center pb-10">
-        <section class="grid grid-cols-3 gap-5 sm:grid-cols-5">
-          {
-            frameworks.length !== 0 &&
-            frameworks.map((framework) => <TechnologyCard {...framework} />)
-          }
-        </section>
-      </div>
-      <h3 class="bottom-0 left-0 w-full flex justify-center items-center p-3">
-        Tools
-      </h3>
-      <div class="flex justify-center">
-        <section class="grid grid-cols-3 gap-5 sm:grid-cols-6">
           {
             technologies.length !== 0 &&
             technologies.map((technology) => <TechnologyCard {...technology} />)
           }
-        </section>
+          {
+            frameworks.length !== 0 &&
+            frameworks.map((framework) => <TechnologyCard {...framework} />)
+          }
+      </section>
       </div>
-
     </article>
-
     <article class="flex flex-col gap-8">
       <header class="mt-20 flex w-full flex-row justify-between gap-3 items-center pb-4">
             <h3 class="text-xl font-bold text-rose-400">// selected projects //</h3>
